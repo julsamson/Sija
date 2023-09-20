@@ -524,6 +524,9 @@ video {
 .h-1 {
   height: 0.25rem;
 }
+.h-0 {
+  height: 0px;
+}
 .w-0 {
   width: 0px;
 }
@@ -612,6 +615,9 @@ video {
 }
 .duration-500 {
   transition-duration: 500ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;

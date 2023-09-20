@@ -1,38 +1,38 @@
 <%- include('../common/head')%>
 
     <body>
-        <nav class="flex justify-between items-center bg-orange-700 drop-shadow-lg z-40">
+        <nav class="flex justify-between items-center bg-orange-700 drop-shadow-lg z-40 fixed w-full">
             <div class="p-3">
                 <h1 class="text-3xl">
                     Dear Sija
                 </h1>
             </div>
-            <div class="flex">
+            <div class="flex md:pr-24">
                 <div class="hidden md:block" id="navTab">
                     <ul class="flex text-lg">
-                        <li class="p-2 active:text-gray-500 relative">
+                        <li class="p-2 active:text-gray-500 relative px-4">
                             <a href="/" class="group">
                                 HOME
                                 <span
                                     class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
                             </a>
                         </li>
-                        <li class="p-2 relative">
-                            <a href="/home" class="group">
-                                PROJECT
+                        <li class="p-2 relative px-4">
+                            <a href="/services" class="group">
+                                SERVICES
                                 <span
                                     class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
                             </a>
                         </li>
-                        <li class="p-2 relative">
+                        <li class="p-2 relative px-4">
                             <a href="/about" class="group">
                                 ABOUT US
                                 <span
                                     class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
                             </a>
                         </li>
-                        <li class="p-2 relative">
-                            <a href="contacts" class="group">
+                        <li class="p-2 relative px-4">
+                            <a href="/contacts" class="group">
                                 CONTACTS
                                 <span
                                     class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
@@ -56,22 +56,22 @@
             <div class="bg-white/60 p-4 pb-0 shadow-md justify-between relative">
                 <ul class="py-9 text-center">
                     <li class="p-3 border-b">
-                        <a href="/home" class="px-4 py-2 hover:text-gray-500 relative">
+                        <a href="/" class="px-4 py-2 hover:text-gray-500 relative">
                             HOME
                         </a>
                     </li>
                     <li class="p-3 border-b">
-                        <a href="" class="px-4 py-2 hover:text-gray-500">
-                            PROJECT
+                        <a href="/services" class="px-4 py-2 hover:text-gray-500">
+                            SERVICES
                         </a>
                     </li>
                     <li class="p-3 border-b">
-                        <a href="" class="px-4 py-2 hover:text-gray-500">
+                        <a href="/about" class="px-4 py-2 hover:text-gray-500">
                             ABOUT US
                         </a>
                     </li>
                     <li class="p-3 border-b">
-                        <a href="" class="px-4 py-2 hover:text-gray-500">
+                        <a href="/contacts" class="px-4 py-2 hover:text-gray-500">
                             CONTACTS
                         </a>
                     </li>

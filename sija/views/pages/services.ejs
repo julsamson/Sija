@@ -1,2 +1,40 @@
-<%- include('nav')%>
-<%- include('../common/footer')%>
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../common/head', {title:"Services"}) %>
+<head>
+    <%- include('../common/nav') %>
+        <div class=" bg-gray-200">
+            <div class="w-full my-2 md:flex container mx-auto">
+                <div class="w-full h-[85vh] p-4">
+                    <img src="/blocks.jpeg" alt="" class="object-cover w-full md:h-[60vh]">
+                    <span>
+                        <h1 class="uppercase pt-4">precast production</h1>
+                        <span class="leading-9 text-gray-500">
+                            Introduction our large range of finest quality block,
+                            paver, curbs and culverts <br>
+                            <a href="" class="uppercase text-red-500">details</a>
+                        </span>
+                    </span>
+                </div>
+                <div class="w-full h-[85vh] p-4">
+                    <img src="/truck.jpeg" alt="" class="object-cover w-full md:h-[60vh]">
+                    <span>
+                        <h1 class="uppercase pt-4">
+                            delivery
+                        </h1>
+                        <span class="leading-10 text-gray-500">
+                            We deliver with the finest quality of our products <br>
+                            <a href="" class="uppercase text-red-500">details</a>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <%- include('../common/footer') %>
+</head>
+
+<body>
+
+</body>
+
+</html>

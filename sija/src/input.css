@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities {
+    .active-link {
+      background-color: red;
+      color: white;
+      /* Add any other styles you want for the active link */
+    }
+  };

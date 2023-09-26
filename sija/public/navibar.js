@@ -4,7 +4,7 @@ const nav = document.getElementById('naviTab')
 
 bars.addEventListener('click', function (){
     bars.classList.toggle('hidden');
-    nav.classList.remove('hidden');
+    nav.classList.toggle('hidden');
 })
 
 xmark.addEventListener('click', function(){

@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../common/head', {title:"Services"}) %>
+
 <head>
+    <%- include('../common/head', {title:"Services"}) %>
+</head>
+
+<body class="relative w-screen overflow-x-hidden">
     <%- include('../common/nav') %>
+    <%- include('../common/scroll') %>
         <div class=" bg-gray-200">
             <div class="w-full my-2 md:flex container mx-auto">
                 <div class="w-full h-[85vh] p-4">
@@ -31,10 +36,6 @@
             </div>
         </div>
         <%- include('../common/footer') %>
-</head>
-
-<body>
-
 </body>
 
 </html>

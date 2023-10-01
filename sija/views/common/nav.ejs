@@ -8,34 +8,17 @@
         <div class="flex md:pr-24">
             <div class="hidden md:block" id="navTab">
                 <ul class="flex text-lg">
-                    <li class="p-2 relative px-4">
-                        <a href="/" class="group">
-                            HOME
-                            <span
-                                class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
-                        </a>
-                    </li>
-                    <li class="p-2 relative px-4">
-                        <a href="/services" class="group">
-                            SERVICES
-                            <span
-                                class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
-                        </a>
-                    </li>
-                    <li class="p-2 relative px-4">
-                        <a href="/about" class="group">
-                            ABOUT US
-                            <span
-                                class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
-                        </a>
-                    </li>
-                    <li class="p-2 relative px-4">
-                        <a href="/contacts" class="group">
-                            CONTACTS
-                            <span
-                                class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span>
-                        </a>
-                    </li>
+                    <% for(let page of pages) { %>
+
+                        <li class="p-2 px-4">
+                            <a href="<%= page.link %>" class="group p-4">
+                                <%= page.page %>
+                                <!--<span
+                                class="absolute bottom-0 left-0 w-0 bg-gray-500 h-1 transition-all group-hover:w-full duration-500"></span> -->
+                            </a>
+                        </li>
+
+                        <% } %>
                 </ul>
             </div>
             <div class="flex">
@@ -52,28 +35,18 @@
 </nav>
 
 <nav class="z-50 fixed top-0 left-0 w-full hidden " id="naviTab">
-    <div class="bg-white/60 p-4 pb-0 shadow-md justify-between relative">
+    <div class="bg-white/90 p-4 pb-0 shadow-md justify-between relative">
         <ul class="py-9 text-center">
-            <li class="p-3 border-b">
-                <a href="/" class="px-4 py-2 hover:text-gray-500 relative">
-                    HOME
-                </a>
-            </li>
-            <li class="p-3 border-b">
-                <a href="/services" class="px-4 py-2 hover:text-gray-500">
-                    SERVICES
-                </a>
-            </li>
-            <li class="p-3 border-b">
-                <a href="/about" class="px-4 py-2 hover:text-gray-500">
-                    ABOUT US
-                </a>
-            </li>
-            <li class="p-3 border-b">
-                <a href="/contacts" class="px-4 py-2 hover:text-gray-500">
-                    CONTACTS
-                </a>
-            </li>
+            <% for(let page of pages) { %>
+
+                <li class="p-3 border-b">
+                    <a href="<%= page.link %>" class="px-4 py-2 hover:text-gray-500 relative">
+                        <%= page.page %>
+                    </a>
+                </li>
+
+                <% } %>
+
         </ul>
         <div class="absolute top-3 right-2">
             <div>
@@ -88,3 +61,6 @@
         </div>
     </div>
 </nav>
+
+<script src="/active.js"></script>
+<script src="/navibar.js"></script>

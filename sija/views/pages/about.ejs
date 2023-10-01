@@ -5,9 +5,132 @@
     <%- include('../common/head', {title:"About Us"}) %>
 </head>
 
-<body>
+<body class="relative w-screen overflow-x-hidden">
     <%- include('../common/nav') %>
-        <%- include('../common/footer') %>
+        <%- include('../common/scroll') %>
+
+            <div>
+                <div>
+                    <div>
+                        <span class="text-center flex flex-col items-center justify-center">
+                            <h1 class="p-4 pt-10 text-3xl font-medium">
+                                Who we are?
+                            </h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-red-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                            </svg>
+                        </span>
+                        <p class="container mx-auto py-2 pt-4">
+                            Dear Sija is an privately-owned construction with over a decade of experience in delivering
+                            quality projects to the market. <br>
+                            The visionary leadership along with highly skilled staff who understands the market and
+                            client
+                            requirements have helped the company grow exponentially from the time of its establishment.
+                        </p>
+                        <p class="container mx-auto py-2">
+                            Excellence and superior quality are what we thrive for, our focus has always been on time
+                            bound delivery
+                            of projects. As the years have gone by Kerai construction has acquired a formidable
+                            reputation as a leading
+                            infracture organication in Tanzania.
+                        </p>
+                    </div>
+                    <div class="container mx-auto my-3 border-[1px]">
+                        <h1 class="bg-red-500 text-center md:text-left p-4 md:p-3 md:px-10">
+                            Dear Sija is committed to create landmarks of Excellence:
+                        </h1>
+                        <ul class="p-4 md:p-3">
+                            <li class="flex gap-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6 text-white bg-red-500 border rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+                                We believe in giving back to society many folds mare than what we have
+                                received, our developmeantal services are designed to empower the people of
+                                Tanzania and enrich their lives.
+                            </li>
+                            <li class="flex gap-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6 text-white bg-red-500 border rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+                                We believe in giving back to society many folds mare than what we have
+                                received, our developmeantal services are designed to empower the people of
+                                Tanzania and enrich their lives.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h1>Mission & Vision</h1>
+                    <div>
+                        <span>
+                            <h1 id="mission">mission</h1>
+                            <h1 id="vision">Vision</h1>
+                        </span>
+                        <span>
+                            <p id="vision-p">
+                            <ul>
+                                <li>
+                                    Mark our presence as a leading infrastructure and real estate player across
+                                    various geographies, perform with a high level of intergrity and harness
+                                    credibility.
+                                </li>
+                                <li>
+                                    Contribute to the economic prosperity and growth through participation in projects
+                                    of
+                                    national importance
+                                </li>
+                                <li>
+                                    Raise our own benchmarks with each progressive attempt.
+                                </li>
+                            </ul>
+                            </p>
+                            <p id="mission-p">
+                            <ul>
+                                <li>
+                                    Implementing best practice to develop world-class processe and contribute
+                                    towards generating resources for a better tomorrow for all.
+                                </li>
+                                <li>
+                                    Innovate and provide intelligent infrastructure solution in a manner that is
+                                    sustainable.
+                                </li>
+                                <li>
+                                    Engage in challenging projects, adhere to required standard and see them
+                                    through completion with high level of integrity and dedication.
+                                </li>
+                                <li>
+                                    Achieve transparency in every deal and try and deliver on time, each time.
+                                </li>
+                            </ul>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <img src="/product.jpg" alt="">
+                    <div>
+                        <h1>Production capabilty</h1>
+                        <span>
+                            The various production procedures are completed with the most sophisticated equipment at our
+                            site. Computer automation is integrated in all the processes from production to the final
+                            product, fully manifesting the remarkable results brought about by technical management.
+                            When you choose Dear Sija, you choose a highly experienced construction civil contractor.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('../common/footer') %>
 </body>
 
 </html>

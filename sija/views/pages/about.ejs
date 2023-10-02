@@ -5,11 +5,11 @@
     <%- include('../common/head', {title:"About Us"}) %>
 </head>
 
-<body class="relative w-screen overflow-x-hidden">
+<body class="relative w-screen overflow-x-hidden font-serif ml-auto">
     <%- include('../common/nav') %>
         <%- include('../common/scroll') %>
 
-            <div>
+            <div class="mx-2">
                 <div>
                     <div>
                         <span class="text-center flex flex-col items-center justify-center">
@@ -37,15 +37,15 @@
                             infracture organication in Tanzania.
                         </p>
                     </div>
-                    <div class="container mx-auto my-3 border-[1px]">
-                        <h1 class="bg-red-500 text-center md:text-left p-4 md:p-3 md:px-10">
+                    <div class="container mx-auto my-3 border-[1px] rounded-t-xl">
+                        <h1 class="bg-red-500 text-center md:text-left p-4 md:p-3 md:px-10 rounded-t-xl">
                             Dear Sija is committed to create landmarks of Excellence:
                         </h1>
                         <ul class="p-4 md:p-3">
-                            <li class="flex gap-x-2">
+                            <li class="flex gap-x-2 p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-white bg-red-500 border rounded-full">
+                                    class="md:w-6 md:h-6 text-white bg-red-500 border rounded-full w-9 h-9 md:p-0">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -54,10 +54,10 @@
                                 received, our developmeantal services are designed to empower the people of
                                 Tanzania and enrich their lives.
                             </li>
-                            <li class="flex gap-x-2">
+                            <li class="flex gap-x-2 p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-white bg-red-500 border rounded-full">
+                                    class="md:w-6 md:h-6 text-white bg-red-500 border rounded-full  w-9 h-9 md:p-0">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -69,46 +69,102 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <h1>Mission & Vision</h1>
-                    <div class="boder p-5">
-                        <span>
-                            <h1 id="mission" class="cursor-pointer p-2 border border-gray-300 my-3 w-[100px]">mission</h1>
-                            <h1 id="vision" class="cursor-pointer p-2 border border-gray-300 w-[100px]">Vision</h1>
+                <div class="container mx-auto my-7">
+                    <h1 class="uppercase text-2xl pb-3 relative">Mission & Vision
+                        <span class="bg-red-400 h-[2px] w-[80px] absolute left-0 bottom-0"></span>
+                    </h1>
+                    <div class="boder">
+                        <span class="md:flex">
+                            <h1 id="mission"
+                                class="cursor-pointer p-2 border border-gray-300 my-3 mr-3 w-[100px] md:w-[200px] text-center uppercase font-mono text-gray-500 rounded-lg">
+                                mission</h1>
+                            <h1 id="vision"
+                                class="cursor-pointer p-2 border border-gray-300 md:m-3 my-3 w-[100px] md:w-[200px] text-center uppercase font-mono text-gray-500 rounded-lg">
+                                Vision</h1>
                         </span>
                         <span>
                             <p class="">
-                            <ul class="m-2 hidden" id="vision-p">
-                                <li>
+                            <ul class=" hidden bg-gray-300 rounded-lg" id="vision-p">
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 pb-1 pt-3 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
                                     Mark our presence as a leading infrastructure and real estate player across
                                     various geographies, perform with a high level of intergrity and harness
                                     credibility.
                                 </li>
-                                <li>
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 py-1 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
                                     Contribute to the economic prosperity and growth through participation in projects
                                     of
                                     national importance
                                 </li>
-                                <li>
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 py-1 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
                                     Raise our own benchmarks with each progressive attempt.
                                 </li>
                             </ul>
                             </p>
                             <p>
-                            <ul class="m-2" id="mission-p">
-                                <li>
+                            <ul class=" bg-gray-300 rounded-lg" id="mission-p">
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 pb-1 pt-3 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
+
                                     Implementing best practice to develop world-class processe and contribute
                                     towards generating resources for a better tomorrow for all.
                                 </li>
-                                <li>
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 py-1 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
                                     Innovate and provide intelligent infrastructure solution in a manner that is
                                     sustainable.
                                 </li>
-                                <li>
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 py-1 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
                                     Engage in challenging projects, adhere to required standard and see them
                                     through completion with high level of integrity and dedication.
                                 </li>
-                                <li>
+                                <li
+                                    class="text-orange-900 leading-7 tracking-wide text-lg px-2 py-1 flex items-center gap-x-2">
+                                    <svg width="15" height="15" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 0L3.3541 1.91019L4.76336 0.572949L3.92705 2.32646L5.85317 2.07295L4.1459 3L5.85317 3.92705L3.92705 3.67354L4.76336 5.42705L3.3541 4.08981L3 6L2.6459 4.08981L1.23664 5.42705L2.07295 3.67354L0.146831 3.92705L1.8541 3L0.146831 2.07295L2.07295 2.32646L1.23664 0.572949L2.6459 1.91019L3 0Z"
+                                            fill="#3E1720" />
+                                    </svg>
                                     Achieve transparency in every deal and try and deliver on time, each time.
                                 </li>
                             </ul>
@@ -116,11 +172,11 @@
                         </span>
                     </div>
                 </div>
-                <div>
+                <div class="container mx-auto my-7">
                     <img src="/product.jpg" alt="">
                     <div>
-                        <h1>Production capabilty</h1>
-                        <span>
+                        <h1 class="capitalize text-xl py-3 text-gray-500 underline">Production capabilty</h1>
+                        <span class="text-gray-500 text-lg">
                             The various production procedures are completed with the most sophisticated equipment at our
                             site. Computer automation is integrated in all the processes from production to the final
                             product, fully manifesting the remarkable results brought about by technical management.
@@ -131,7 +187,7 @@
             </div>
 
             <%- include('../common/footer') %>
-            <script src="/about.js"></script>
+                <script src="/about.js"></script>
 </body>
 
 </html>

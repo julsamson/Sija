@@ -1,5 +1,7 @@
 let express = require('express');
 let app = express();
+let nodemailer = require('nodemailer');
+let bodyParser = require('body-parser');
 
 
 
@@ -16,20 +18,57 @@ pages = [
     { page: "CONTACTS", link: "/contacts" },
 ]
 
-app.get('/', (req, res)=>{
-    res.render('pages/home', {pages: pages})
+app.get('/', (req, res) => {
+    res.render('pages/home', { pages: pages })
 })
 
-app.get('/services', (req, res)=> {
-    res.render('pages/services', {pages: pages});
+app.get('/services', (req, res) => {
+    res.render('pages/services', { pages: pages });
 })
 
-app.get('/about', (req, res)=> {
-    res.render('pages/about', {pages: pages});
+app.get('/about', (req, res) => {
+    res.render('pages/about', { pages: pages });
 })
 
-app.get('/contacts', (req, res)=>{
-    res.render('pages/contacts', {pages: pages});
+app.get('/contacts', (req, res) => {
+    res.render('pages/contacts', { pages: pages });
+})
+
+
+//send an email
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const transporter = nodemailer.createTransport({
+    server: 'gmail',
+    auth: {
+        user: 'jaymsab170@gmail.com',
+        pass: 'mxabiaz01',
+    },
+});
+
+app.post('/send-email', (req, res) => {
+    const { name, email, phone, message } = req.body;
+
+    const mailOptions = {
+        from : email,
+        to : 'jaymsab170@gmail.com',
+        subject : 'New Contact Form Submission',
+        text : `Name: ${name}\n Email: ${email}\n Phone: ${phone}\n Message: ${message}`,
+    };
+    
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if(error) {
+            console.error(error);
+            res.send(500).send('Error sending email');
+        }
+        else {
+            console.log('Email sent: ' + info.response);
+            res.send('Email sent successfully');
+        }
+    })
 })
 
 app.listen(3000);

@@ -2,7 +2,8 @@ let express = require('express');
 let app = express();
 let nodemailer = require('nodemailer');
 let bodyParser = require('body-parser');
-
+const { constrainedMemory } = require('process');
+let PORT = process.env.PORT || 3000;
 
 
 app.set('view engine', 'ejs');
@@ -42,7 +43,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const transporter = nodemailer.createTransport({
     server: 'gmail',
-    auth: {
+    auth: {   
         user: 'jaymsab170@gmail.com',
         pass: 'mxabiaz01',
     },
@@ -71,4 +72,6 @@ app.post('/send-email', (req, res) => {
     })
 })
 
-app.listen(3000);
+app.listen(PORT, ()=>{
+    console.log(`server started on port ${PORT}`);
+});

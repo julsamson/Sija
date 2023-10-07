@@ -14,5 +14,4 @@ xmark.addEventListener('click', function(){
 })
 navLink.addEventListener('click', function(){
     nav.classlist.add('hidden');
-    bars.classList.remove('hidden');
 })
